@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, {Component } from "react";
 import {Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import AuthService from "./services/auth.service";
-
 import Login from "./composants/login.component";
 //import Register from "./composants/register.component";
 import Home from "./composants/home.component";
@@ -118,8 +117,8 @@ class App extends Component{
                 <Route exact path={["/", "/home"]} component={Home} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/profile" component={Profile} />
-                <Route path="/user" component={BoardMembre} />
-                <Route path="/mod" component={BoardClient} />
+                <Route path="/member" component={BoardMembre} />
+                <Route path="/client" component={BoardClient} />
                 <Route path="/admin" component={BoardAdmin} />
               </Switch>
             </div>
